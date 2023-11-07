@@ -46,7 +46,7 @@ if __name__ == "__main__":
         elif choice == "3":
             sender_id = input("Enter Sender ID: ")
             receiver_id = input("Enter Receiver ID: ")
-            amount = float(input("Enter Amount: "))
+            amount = int(input("Enter Amount: "))
             response = send_request(host, port, ["process_transaction", sender_id, receiver_id, amount])
             print("Transaction result:", response)
         elif choice == "4":
